@@ -1,0 +1,19 @@
+10.1007/978-3-540-74970-7_38:
+  type: article
+  title:
+    value: "MiniZinc: Towards a Standard CP Modelling Language"
+    sentence-case: "Minizinc: towards a standard cp modelling language"
+  page-range: 529-543
+  editor: "Bessière, Christian"
+  author: "Nethercote, Peter J.\nand Becket, Ralph\nand Brand, Sebastian\nand Duck, Gregory J.\nand Tack, Guido, Nicholas\nand Stuckey"
+  parent:
+    - type: proceedings
+      publisher:
+        value: Springer Berlin Heidelberg
+        sentence-case: Springer berlin heidelberg
+      location: "Berlin, Heidelberg"
+      title:
+        value: Principles and Practice of Constraint Programming -- CP 2007
+        sentence-case: Principles and practice of constraint programming -- cp 2007
+  date: 2007
+  isbn: 978-3-540-74970-7

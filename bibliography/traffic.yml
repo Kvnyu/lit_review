@@ -1,0 +1,16 @@
+FERRER2019697:
+  type: article
+  doi: "https://doi.org/10.1016/j.asoc.2019.03.016"
+  author:
+    - "Ferrer, Javier"
+    - "López-Ibáñez, Manuel"
+    - "Alba, Enrique"
+  title: Reliable simulation-optimization of traffic lights in a real-world city
+  url: "https://www.sciencedirect.com/science/article/pii/S1568494619301346"
+  issn: 1568-4946
+  page-range: 697-711
+  date: 2019
+  parent:
+    - type: periodical
+      volume: 78
+      title: Applied Soft Computing

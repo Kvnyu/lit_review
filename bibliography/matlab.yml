@@ -1,0 +1,14 @@
+MATLAB:
+  type: misc
+  author: "Inc., The MathWorks"
+  url: "https://www.mathworks.com/"
+  publisher:
+    value: The MathWorks Inc.
+    sentence-case: The mathworks inc.
+  location:
+    value: "Natick, Massachusetts, United States"
+    sentence-case: "Natick, massachusetts, united states"
+  title:
+    value: "MATLAB version: 9.13.0 (R2022b)"
+    sentence-case: "Matlab version: 9.13.0 (r2022b)"
+  date: 2022

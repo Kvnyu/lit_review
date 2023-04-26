@@ -180,3 +180,86 @@ cbls_2005:
     - "Michel, Laurent"
   date: 2005
   title: Constraint-Based Local Search
+
+google:
+  type: misc
+  publisher: Google
+  title: Employee scheduling or-tools | google developers
+  url: "https://developers.google.com/optimization/scheduling/employee_scheduling"
+
+traffic:
+  type: article
+  doi: "https://doi.org/10.1016/j.asoc.2019.03.016"
+  author:
+    - "Ferrer, Javier"
+    - "López-Ibáñez, Manuel"
+    - "Alba, Enrique"
+  title: Reliable simulation-optimization of traffic lights in a real-world city
+  url: "https://www.sciencedirect.com/science/article/pii/S1568494619301346"
+  issn: 1568-4946
+  page-range: 697-711
+  date: 2019
+  parent:
+    - type: periodical
+      volume: 78
+      title: Applied Soft Computing
+
+traffic_2:
+  type: article
+  parent:
+    - type: periodical
+      title: Applied Soft Computing
+      volume: 78
+  url: "https://www.sciencedirect.com/science/article/pii/S1568494619301346"
+  doi: "https://doi.org/10.1016/j.asoc.2019.03.016"
+  title: Reliable simulation-optimization of traffic lights in a real-world city
+  author:
+    - "Ferrer, Javier"
+    - "López-Ibáñez, Manuel"
+    - "Alba, Enrique"
+  issn: 1568-4946
+  page-range: 697-711
+  date: 2019
+
+matlab:
+  type: misc
+  author: "Inc., The MathWorks"
+  url: "https://www.mathworks.com/"
+  publisher:
+    value: The MathWorks Inc.
+    sentence-case: The mathworks inc.
+  location:
+    value: "Natick, Massachusetts, United States"
+    sentence-case: "Natick, massachusetts, united states"
+  title:
+    value: "MATLAB version: 9.13.0 (R2022b)"
+    sentence-case: "Matlab version: 9.13.0 (r2022b)"
+  date: 2022
+
+minizincc:
+  type: article
+  title:
+    value: "MiniZinc: Towards a Standard CP Modelling Language"
+    sentence-case: "Minizinc: towards a standard cp modelling language"
+  page-range: 529-543
+  editor: "Bessière, Christian"
+  author: 
+   - "Nethercote, N."
+   - "Stuckey, P.J"
+   - "Becket, R."
+   - "Ralph"
+   - "Brand S."
+   - "Sebastian" 
+   - "Duck Gregory J."
+   - "Tack, Guido"
+  parent:
+    - type: proceedings
+      publisher:
+        value: Springer Berlin Heidelberg
+        sentence-case: Springer berlin heidelberg
+      location: "Berlin, Heidelberg"
+      title:
+        value: Principles and Practice of Constraint Programming -- CP 2007
+        sentence-case: Principles and practice of constraint programming -- cp 2007
+  date: 2007
+  isbn: 978-3-540-74970-7
