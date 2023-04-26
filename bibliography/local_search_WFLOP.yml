@@ -1,0 +1,17 @@
+---
+WAGNER201364:
+  type: article
+  title: A fast and effective local search algorithm for optimizing the placement of wind turbines
+  doi: "https://doi.org/10.1016/j.renene.2012.09.008"
+  author:
+    - "Wagner, Markus"
+    - "Day, Jareth"
+    - "Neumann, Frank"
+  issn: 0960-1481
+  url: "https://www.sciencedirect.com/science/article/pii/S0960148112005745"
+  page-range: 64-70
+  date: 2013
+  parent:
+    - type: periodical
+      volume: 51
+      title: Renewable Energy

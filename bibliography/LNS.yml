@@ -1,0 +1,18 @@
+---
+10.1007/3-540-49481-2_30:
+  type: article
+  author: "Shaw, Paul"
+  parent:
+    - type: proceedings
+      title:
+        value: Principles and Practice of Constraint Programming --- CP98
+        sentence-case: Principles and practice of constraint programming --- cp98
+      publisher:
+        value: Springer Berlin Heidelberg
+        sentence-case: Springer berlin heidelberg
+      location: "Berlin, Heidelberg"
+  editor: "Maher, Jean-Francois, Michael\nand Puget"
+  title: Using Constraint Programming and Local Search Methods to Solve Vehicle Routing Problems
+  isbn: 978-3-540-49481-2
+  page-range: 417-431
+  date: 1998

@@ -1,0 +1,16 @@
+---
+"doi:10.1126/science.220.4598.671":
+  type: article
+  title: Optimization by Simulated Annealing
+  date: 1983
+  author:
+    - "Kirkpatrick, S."
+    - "Gelatt, C. D."
+    - "Vecchi , M. P."
+  parent:
+    - type: periodical
+      volume: 220
+      title: Science
+      issue: 4598
+  page-range: 671-680
+  doi: 10.1126/science.220.4598.671

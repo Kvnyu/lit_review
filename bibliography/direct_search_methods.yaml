@@ -1,0 +1,18 @@
+Audet2014:
+  type: chapter
+  doi: 10.1007/978-1-4939-1124-0_2
+  page-range: 31-56
+  parent:
+    - type: book
+      publisher:
+        value: Springer New York
+        sentence-case: Springer new york
+      location:
+        value: "New York, NY"
+        sentence-case: "New york, ny"
+  url: "https://doi.org/10.1007/978-1-4939-1124-0_2"
+  editor: "Pardalos, Themistocles M., Panos M.\nand Rassias"
+  isbn: 978-1-4939-1124-0
+  date: 2014
+  title: A Survey on Direct Search Methods for Blackbox Optimization and Their Applications
+  author: "Audet, Charles"

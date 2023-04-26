@@ -1,0 +1,17 @@
+---
+Samorani2013:
+  type: chapter
+  page-range: 21-38
+  title: The Wind Farm Layout Optimization Problem
+  editor: "Pardalos, Steffen\nand Pereira, Mario V. F.\nand Iliadis, Niko A.\nand Pappu, Vijay, Panos M.\nand Rebennack"
+  parent:
+    - type: book
+      location: "Berlin, Heidelberg"
+      publisher:
+        value: Springer Berlin Heidelberg
+        sentence-case: Springer berlin heidelberg
+  author: "Samorani, Michele"
+  doi: 10.1007/978-3-642-41080-2_2
+  isbn: 978-3-642-41080-2
+  url: "https://doi.org/10.1007/978-3-642-41080-2_2"
+  date: 2013

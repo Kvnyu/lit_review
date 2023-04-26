@@ -1,0 +1,18 @@
+Michel2018:
+  type: chapter
+  editor: "Martí, Panos M. \nand Resende, Mauricio G. C., Rafael\nand Pardalos"
+  doi: 10.1007/978-3-319-07124-4_7
+  isbn: 978-3-319-07124-4
+  date: 2018
+  parent:
+    - type: book
+      publisher: Springer International Publishing
+      location: Cham
+  title: Constraint-Based Local Search
+  page-range: 223-260
+  authors: 
+    - "Michel"
+    - "Pascal Van"
+    - "Laurent"
+    - "Hentenryck"
+  url: "https://doi.org/10.1007/978-3-319-07124-4_7"
