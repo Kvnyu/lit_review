@@ -1,0 +1,182 @@
+minizinc_handbook:
+    type: Web
+    title: "MiniZinc Handbook"
+    serial-number: v2.6.1
+    author: ["Stuckey, P.J", "Marriott, K.", "Tack, G"]
+    url: https://www.minizinc.org/doc-2.5.5/en/modelling.html?highlight=cake#an-arithmetic-optimisation-example
+
+audet_2014:
+  type: chapter
+  doi: 10.1007/978-1-4939-1124-0_2
+  page-range: 31-56
+  parent:
+    - type: book
+      publisher:
+        value: Springer New York
+        sentence-case: Springer new york
+      location:
+        value: "New York, NY"
+        sentence-case: "New york, ny"
+  url: "https://doi.org/10.1007/978-1-4939-1124-0_2"
+  isbn: 978-1-4939-1124-0
+  date: 2014
+  title: A Survey on Direct Search Methods for Blackbox Optimization and Their Applications
+  author: "Audet, Charles"
+
+samorani_2013:
+  type: chapter
+  doi: 10.1007/978-3-642-41080-2_2
+  url: "https://doi.org/10.1007/978-3-642-41080-2_2"
+  title: The Wind Farm Layout Optimization Problem
+  page-range: 21-38
+  parent:
+    - type: book
+      publisher:
+        value: Springer Berlin Heidelberg
+        sentence-case: Springer berlin heidelberg
+      location: "Berlin, Heidelberg"
+  date: 2013
+  author: "Samorani, Michele"
+  isbn: 978-3-642-41080-2
+
+wagner_2013:
+  type: article
+  title: A fast and effective local search algorithm for optimizing the placement of wind turbines
+  doi: "https://doi.org/10.1016/j.renene.2012.09.008"
+  author:
+    - "Wagner, Markus"
+    - "Day, Jareth"
+    - "Neumann, Frank"
+  issn: 0960-1481
+  url: "https://www.sciencedirect.com/science/article/pii/S0960148112005745"
+  page-range: 64-70
+  date: 2013
+  parent:
+    - type: periodical
+      volume: 51
+      title: Renewable Energy
+
+bajaj_2021:
+  type: chapter
+  parent:
+    - type: book
+      publisher: Springer International Publishing
+      location: Cham
+  doi: 10.1007/978-3-030-66515-9_2
+  date: 2021
+  editor: 
+    - "Pardalos"
+    - "Varvara"
+    - "Vrahatis"
+    - "Michael N."
+    - "Panos M. and Rasskazova"
+  author: 
+    - "Bajaj"
+    - "Akhil"
+    - "Hasan"
+    - "M. M. Faruque"
+    - "Ishan"
+    - "Arora"
+  page-range: 35-65
+  isbn: 978-3-030-66515-9
+  title:
+    value: "Black-Box Optimization: Methods and Applications"
+    sentence-case: "Black-box optimization: methods and applications"
+  url: "https://doi.org/10.1007/978-3-030-66515-9_2"
+
+shaw_1998:
+  type: article
+  author: "Shaw, Paul"
+  parent:
+    - type: proceedings
+      title:
+        value: Principles and Practice of Constraint Programming --- CP98
+        sentence-case: Principles and practice of constraint programming --- cp98
+      publisher:
+        value: Springer Berlin Heidelberg
+        sentence-case: Springer berlin heidelberg
+      location: "Berlin, Heidelberg"
+  editor: "Maher, Jean-Francois, Michael and Puget"
+  title: Using Constraint Programming and Local Search Methods to Solve Vehicle Routing Problems
+  isbn: 978-3-540-49481-2
+  page-range: 417-431
+  date: 1998
+
+kirkpatrick_1983:
+  type: article
+  title: Optimization by Simulated Annealing
+  date: 1983
+  author:
+    - "Kirkpatrick, S."
+    - "Gelatt, C. D."
+    - "Vecchi , M. P."
+  parent:
+    - type: periodical
+      volume: 220
+      title: Science
+      issue: 4598
+  page-range: 671-680
+  doi: 10.1126/science.220.4598.671
+
+nethercode_2007:
+  type: article
+  page-range: 529-543
+  editor: "Bessière, Christian"
+  parent:
+    - type: proceedings
+      publisher:
+        value: Springer Berlin Heidelberg
+        sentence-case: Springer berlin heidelberg
+      title:
+        value: Principles and Practice of Constraint Programming -- CP 2007
+        sentence-case: Principles and practice of constraint programming -- cp 2007
+      location: "Berlin, Heidelberg"
+  date: 2007
+  title:
+    value: "MiniZinc: Towards a Standard CP Modelling Language"
+    sentence-case: "Minizinc: towards a standard cp modelling language"
+  author: 
+    - "Nethercote"
+    - "Peter J." 
+    - "Becket"
+    - "Ralph" 
+    - "Brand"
+    - "Sebastian"
+    - "Duck"
+    - "Gregory J."
+  isbn: 978-3-540-74970-7
+
+michel_2018:
+  type: chapter
+  editor: 
+   - "Martí"
+   - "Panos M." 
+   - "Resende"
+   - "Mauricio G. C."
+   - "Rafael"  
+   - "Pardalos"
+  doi: 10.1007/978-3-319-07124-4_7
+  isbn: 978-3-319-07124-4
+  date: 2018
+  parent:
+    - type: book
+      publisher: Springer International Publishing
+      location: Cham
+  title: Constraint-Based Local Search
+  page-range: 223-260
+  author: 
+    - "Michel"
+    - "Pascal Van"
+    - "Laurent"
+    - "Hentenryck"
+  url: "https://doi.org/10.1007/978-3-319-07124-4_7"
+
+
+cbls_2005:
+  type: book
+  isbn: 978-0-262-22077-4
+  author:
+    - "Van Hentenryck, Pascal"
+    - "Michel, Laurent"
+  date: 2005
+  title: Constraint-Based Local Search

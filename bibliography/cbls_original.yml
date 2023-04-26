@@ -1,0 +1,9 @@
+---
+book:
+  type: book
+  isbn: 978-0-262-22077-4
+  author:
+    - "Van Hentenryck, Pascal"
+    - "Michel, Laurent"
+  date: 2005
+  title: Constraint-Based Local Search

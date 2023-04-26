@@ -1,0 +1,16 @@
+bajaj_2021:
+  type: chapter
+  parent:
+    - type: book
+      publisher: Springer International Publishing
+      location: Cham
+  doi: 10.1007/978-3-030-66515-9_2
+  date: 2021
+  editor: "Pardalos, Varvara\nand Vrahatis, Michael N., Panos M.\nand Rasskazova"
+  author: "Bajaj, Akhil\nand Hasan, M. M. Faruque, Ishan\nand Arora"
+  page-range: 35-65
+  isbn: 978-3-030-66515-9
+  title:
+    value: "Black-Box Optimization: Methods and Applications"
+    sentence-case: "Black-box optimization: methods and applications"
+  url: "https://doi.org/10.1007/978-3-030-66515-9_2"
