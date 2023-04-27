@@ -353,28 +353,6 @@ Note that the quantification of violation contribution depends on the type of co
 
 #pagebreak()
 
-= Topics that haven't been touched upon which we discussed
-
-== Hybrid  search method implementations
-In CP:
-White box - instruct how things are done
-Black box - give it something, and get something in return, same thing for search
-
-
-== Ways in which the black box function can be used
-- Could have a black box that is a constraint?
-  - When we have a simulation, we might want to make sure that all cars never have to wait more than 5 minutes
-  - This is a black box function constraint
-- Could do surrogate model
-- Look at MiniZinc with functions
-  - What will happen when we do that with Black Boxes. 
-- Learning solvers, works similar to branch and bound. 
-
-- Give the solver relations between inputs and outputs, could build an approximation that is useful for the solver, if that eliminates some of the solutions I have to try, might be useful. e.g monotonicity. So this is when we know a bit about the shape of the grey box function, we can then use those relations.
-
-- Genetic algorithms
-- Talking more about the strengths and weaknesses of each heuristic algorithm
-
 = Summary of the State of the Art
 The literature review has explored many techniques to solve modellable problems, such as constraint programming, as well as many techniques for solving Black-Box problems, such as local search. We have also seen many hybrid approaches to solving modellable problems that incorporate the strengths of each approach. 
 
@@ -391,5 +369,81 @@ With MiniZinc, a way to extend this generality would be to introduce BlackBox fu
 
 Furthermore, research does suggest that in Grey Box optimization problems where the shape of the function is known, this knowledge can be exploited during the optimization process. However, many solutions for this type of grey box problem algorithmically utilize this knowledge. A potential gap is the ability to declaratively model this function behavior, like MiniZinc can currently do with global constraints to guide its search.
 
-Therefore the main gaps which can be investigated are, how can we extend the constraint programming software MiniZinc to be able to handle Black Box functions as objective functions and constraints? Then once we have the technology, the question becomes, what methods, hybrid or pure are effective in optimization such problems which are a mix of Black Box and modellable?
+Therefore the main gaps which can be investigated are, how can modelling software such as MiniZinc be extended to be able to handle Black Box functions as objective functions and constraints, as well as existing modellable constraints? Once this is established, the gap we seek to investigate is; what methods, hybrid or pure are effective in optimization such problems which are a mix of Black Box and modellable?
+
+= Research Project Plan
+
+There are a few main stages of this project:
+- I need to understand the background of my research area - optimization
+- I need to understand the MiniZinc modelling language so that I can extend it
+- I need to look into backend solvers that can be modified to support querying Black Box functions
+- I need to find Black Box problems with hybrid modellable constraints that can be used to test our approaches on
+- I need to look into approaches to Black Box optimization, Model based optimization, and how they can be combined to develop an approach to solving hybrid Black Box and Model based optimization problems. 
+
+For much of the learning tasks in the next sections, the literature review that I have conducted has been integral to forming an understanding on these topics.
+
+== Background on Optimization
+It is important to develop an understanding of the research area I am to undertake my research in. One way that I can quickly get up to speed on the topic is to under take the "Solving Algorithms for Discrete Optimization" course on Coursera, which is taught by a leading researcher in this field - Prof Peter Stuckey. A reasonable timeline for this part of the project would be 1 week.
+
+== MiniZinc
+Secondly, I need to gain a familiarity with MiniZinc. This is an important part of the process as it will be the modelling language that I will be using throughout the research project. There is also an online course on modelling for discrete optimization on Coursera, also taught by Prof Peter Stuckey. This will take an estimated 1 week to complete.
+
+I will also learn MiniZinc by writing models to test problems such as the N queens problem, as well as more complex ones such as the nurse scheduling problem.
+
+== Solvers
+Since MiniZinc offers a great range of solvers as backends, I will need to investigate each solver, its documentation as well as source code to decide whether it is a suitable target to extend and allow Black Box functionality. Some of the main solvers that are by default available to the MiniZinc application are Gecode, Chuffed, and OR-Tools. 
+
+Some important aspects of a solver are:
+- Extendable. The code needs to be open source, and the codebase should be fairly easy to work with. If the solver allows for extension by defining your own functions or interfaces, that is even better.
+- Well documented. It is important that I can understand the algorithms that are used to develop a particular solver. This can often be found within the initial research paper for the solver.
+
+The approach that I will take to investigating each backend solver is as follows:
+- I will read the paper or documentation that the solver provides. 
+- I will check the source code for the solver, trying to see if it will be easy to extend or modify to suit my purposes
+
+From this, I can then generate a description, as well as a SWOT analysis for each solver. From this analysis, we can then decide on a solver to extend
+
+The estimated timeframe for this part of the research project will be 2 weeks.
+
+== Extending the solver library to accept Black Box functions
+After a suitable solver library is found, we will need to extend it to be able to handle Black Box functions. As this can be done in many different ways, some initial research and planning at this stage will need to be undertaken. We will need to consider the input format of the Black Box functions. For example, depending on whether they are written in Java, or Python, or C++, our implementation will vary. Without researching much further into this, a C++ dynamically linked function call would be the safest option, as from this level, most other Black Box functions can be wrapped and called. Given this approach, this task would likely take around 2.5 weeks with the planning period.
+
+== Suitable Black Box problems
+Another key part of the research project is to find suitable hybrid Black Box and Modellable problems to solve.
+A couple of key criteria that will be utilized for this part of the study are:
+- Benchmarks available, or able to setup benchmarks for the problem easily. This is important as benchmarks will allow us to compare our approaches with those already existing. It is an important metric for performance and efficiency of the algorithm.
+- A impactful problem. It is important that we consider Black Box problems that are fairly well researched, as this will make our findings more significant.
+- Discrete Black Box problems. As MiniZinc is used to solve discrete optimization problems, it will be easier to work with problems that work with discrete variables and constraints as well. This will mean that less modification will have to be done to MiniZinc, and/or the Black box function
+- Variety in optimization problems. A variety of Black Box functions will enable us to explore the effectiveness of different approaches to different kinds of problems.
+
+When researching on Black Box problems, we will evaluate each against this set of criteria. The top 5 problems will then be shortlisted. Some potential candidates that we can evaluate are: 
+- Wind Farm Layout Optimization
+- Travelling Thief Problem
+- Team Track Cycling
+- Wave Farm Layout Optimization
+
+This whole process will likely take approximately 4 weeks.
+
+== Black Box optimization methods
+It would also be worthwhile to attempt to build existing pure Black Box optimization algorithms in MiniZinc. This will provide a base to work off when considering hybrid approaches. A potential algorithm which we can consider implementing is LNS. The estimated amount of time this would take is 3 weeks.
+
+== Hybrid Black Box and Model based methods
+Attempting to develop methods to optimize problems at the intersection will likely require exploration and trial and error. Here, I propose an approach to developing solutions to these problems.
+
+For each Black Box problem, explore the literature to examine efficient existing methods utilized. These methods can be extended and or incorporated with model based approaches to create a hybrid approach. The advantages and disadvantages of each approach will need to be listed. For example, given a heuristic method, we would want to find model based methods that are able to counteract these weaknesses. In this stage, we can utilize the knowledge gained through the literature review and earlier study of such hybrid approaches like LNS.
+
+This part of the study will likely be fairly time consuming, as it is largely exploratory. Therefore i'd assign 6-8 weeks for this part of the project.
+
+== Total project estimate
+In total, the time frame for the project is proposed to be around 19.5 - 21.5 weeks. Given Hofstader's law that "It always takes longer than you expect, even when you take into account Hofstadter's law", this estimate would likely go up to 30 weeks, which fits the duration of the program.
+
+= Conclusion
+In conclusion, this literature review has outlined the case for this research project on the topic: Hybrid Black Box and Model based optimization. It has introduced foundational areas of knowledge for this project, from CSP, to COP, to modelling languages and solvers such as MiniZinc and Gecode. Furthermore, it has introduced Black Box problems, with the example of WFLOP, as well as how this problem's formulation can be extended to be a hybrid Black Box and modellable problem. The literature review then explores methods utilized in Black Box optimization, such as Local search, and a meta-heuristic known as Simulated Annealing. Further, hybrid methods that utilize ideas from both local search and model based optimization are introduced, demonstrating a potential approach to problems in our hybrid domain. LNS and CBLS were explored, with the hybridized components justified.
+
+From the literature review conducted, gaps in the literature were found:
+- Existing optimization approaches are largely directed at either modellable, or purely Black Box functions, therefore more research can potentially be done at the intersection of these two problems
+- Modelling software such as MiniZinc doesn't support interoperability with Black Box functions, therefore further research can be done into how modelling software and their backend solvers can integrate with Black Box functions
+- Finally, the literature review found that there is a lack of hybrid approaches to hybrid problems. This is at the core of our research project
+
+Given the above goals, the research project plan section then described how the research would be conducted.
 #bibliography("bibliography.yml")
