@@ -1,0 +1,15 @@
+10.1007/978-3-319-17689-5_5:
+  type: article
+  author: "Gay, David M."
+  editor: "Al-Baali, Lucio\nand Purnama, Anton, Mehiddin\nand Grandinetti"
+  title:
+    value: "The AMPL Modeling Language: An Aid to Formulating and Solving Optimization Problems"
+    sentence-case: "The ampl modeling language: an aid to formulating and solving optimization problems"
+  isbn: 978-3-319-17689-5
+  date: 2015
+  page-range: 95-116
+  parent:
+    - type: proceedings
+      publisher: Springer International Publishing
+      title: Numerical Analysis and Optimization
+      location: Cham

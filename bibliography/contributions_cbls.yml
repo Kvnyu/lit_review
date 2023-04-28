@@ -1,0 +1,16 @@
+article:
+  type: article
+  author:
+    - "Björdal, Gustav"
+    - "Monette, Jean-Noël"
+    - "Flener, Pierre"
+    - "Pearson, Justin"
+  parent:
+    - type: periodical
+      title: Constraints
+      volume: 20
+  doi: 10.1007/s10601-015-9184-z
+  title:
+    value: A constraint-based local search backend for MiniZinc
+    sentence-case: A constraint-based local search backend for minizinc
+  date: 2015
